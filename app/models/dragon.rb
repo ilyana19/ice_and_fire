@@ -8,11 +8,13 @@ class Dragon < ApplicationRecord
   end
 
   def can_eat_40_sheep?
-    if appetite == 'Insatiable'
-      return true
-    else
-      return false
-    end
+    # if appetite == 'Insatiable'
+    #   return true
+    # else
+    #   return false
+    # end
+    # condition ? true : false
+    appetite == 'Insatiable' ? true : false
   end
 
   # Tells you which period a Dragon was alive during
